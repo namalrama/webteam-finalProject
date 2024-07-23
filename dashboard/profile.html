@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - Japanese Study Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html"><img src="images/logo.PNG" width="220px"></a>
+        <ul>
+            <li><a href="learningPlan.html"><i class="fas fa-calendar-alt"></i>&nbsp;Study Plan</a></li>
+            <li><a href="vocabularyTracker.html"><i class="fas fa-book"></i>&nbsp;My Vocabulary</a></li>
+            <li><a href="grammarLessons.html"><i class="fas fa-language"></i>&nbsp;Grammar Lessons</a></li>
+            <li><a href="listeningPractice.html"><i class="fas fa-headphones"></i>&nbsp;Listening Practice</a></li>
+            <li><a href="readingPractice.html"><i class="fas fa-file-alt"></i>&nbsp;Reading Practice</a></li>
+            <li><a href="learningMaterials.html"><i class="fas fa-globe"></i>&nbsp;Study Materials</a></li>
+            <li><a href="progress.html"><i class="fas fa-chart-line"></i>&nbsp;My Progress</a></li>
+            <li><a href="quizzes.html"><i class="fas fa-clipboard-check"></i>&nbsp;Quizzes</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="top-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <div class="notification-icon">
+                    <h4 style="margin-right: -40px;">Notifications</h4>
+                    <span class="badge">3</span>
+                </div>
+                <div class="profile">
+                    <h4>Profile</h4>
+                    <div class="dropdown">
+                        <a href="profile.html"><i class="fas fa-user"></i> &nbsp;Profile</a>
+                        <a href="settings.html"><i class="fas fa-wrench"></i> &nbsp;Settings</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> &nbsp;Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-page">
+            <div class="profile-header">
+                <div class="profile-info">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="info">
+                        <h1>Kasuni Perara</h1>
+                        <p>Email: Kasuniperera@gmail.com</p>
+                        <p>Japanese Proficiency: Beginner</p>
+                    </div>
+                </div>
+                <button class="edit-btn"><i class="fas fa-edit"></i> Edit Profile</button>
+            </div>
+            <div class="profile-details">
+                <form id="profile-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" value="Kasuni">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" value="Perera">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="kasuniperera@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="japanese-level">Japanese Proficiency Level</label>
+                        <input type="email" id="japanese-level" name="japanese-level" value="Beginner">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" value="No:123, Tokyo, Japan">
+                    </div>
+                    <!-- <button type="submit" class="save-btn">Save Changes</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Japanese Study Platform. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

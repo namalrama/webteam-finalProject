@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1: Basic Greetings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html"><img src="images/logo.PNG" width="220px"></a>
+        <ul>
+            <li><a href="learningPlan.html"><i class="fas fa-calendar-alt"></i>&nbsp;Study Plan</a></li>
+            <li><a href="vocabularyTracker.html"><i class="fas fa-book"></i>&nbsp;My Vocabulary</a></li>
+            <li><a href="grammarLessons.html"><i class="fas fa-language"></i>&nbsp;Grammar Lessons</a></li>
+            <li><a href="listeningPractice.html"><i class="fas fa-headphones"></i>&nbsp;Listening Practice</a></li>
+            <li><a href="readingPractice.html"><i class="fas fa-file-alt"></i>&nbsp;Reading Practice</a></li>
+            <li><a href="learningMaterials.html"><i class="fas fa-globe"></i>&nbsp;Study Materials</a></li>
+            <li><a href="progress.html"><i class="fas fa-chart-line"></i>&nbsp;My Progress</a></li>
+            <li><a href="quizzes.html"><i class="fas fa-clipboard-check"></i>&nbsp;Quizzes</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="top-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <div class="notification-icon">
+                    <h4 style="margin-right: -40px;">Notifications</h4>
+                    <span class="badge">3</span>
+                </div>
+                <div class="profile">
+                    <h4>Profile</h4>
+                    <div class="dropdown">
+                        <a href="profile.html"><i class="fas fa-user"></i> &nbsp;Profile</a>
+                        <a href="settings.html"><i class="fas fa-wrench"></i> &nbsp;Settings</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> &nbsp;Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-page">
+            <h1>Quiz 1: Basic Greetings</h1>
+            <form id="quizForm">
+                <div class="question">
+                    <p>1. What is the Japanese word for "Hello"?</p>
+                    <label><input type="radio" name="q1" value="a"> こんにちは (Konnichiwa)</label><br>
+                    <label><input type="radio" name="q1" value="b"> さようなら (Sayōnara)</label><br>
+                    <label><input type="radio" name="q1" value="c"> おはよう (Ohayō)</label><br>
+                </div>
+                <div class="question">
+                    <p>2. What is the correct response to "お元気ですか?" (Ogenki desu ka?)?</p>
+                    <label><input type="radio" name="q2" value="a"> はい、元気です (Hai, genki desu)</label><br>
+                    <label><input type="radio" name="q2" value="b"> いいえ、元気ではありません (Iie, genki de wa arimasen)</label><br>
+                    <label><input type="radio" name="q2" value="c"> こんにちは (Konnichiwa)</label><br>
+                </div>
+                <div class="question">
+                    <p>3. How do you say "Good night" in Japanese?</p>
+                    <label><input type="radio" name="q3" value="a"> おやすみなさい (Oyasumi nasai)</label><br>
+                    <label><input type="radio" name="q3" value="b"> こんにちは (Konnichiwa)</label><br>
+                    <label><input type="radio" name="q3" value="c"> さようなら (Sayōnara)</label><br>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <div id="results" class="results" style="display: none;">
+                <h2>Results</h2>
+                <p id="score">Your score will be displayed here.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Japanese Study Platform. All rights reserved.</p>
+    </footer>
+    <script src="quiz1.js"></script>
+</body>
+</html>

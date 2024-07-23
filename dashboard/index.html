@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Study Platform Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html"><img src="images/logo.PNG" width="220px"></a>
+        <ul>
+            <li><a href="learningPlan.html"><i class="fas fa-calendar-alt"></i>&nbsp;Study Plan</a></li>
+            <li><a href="vocabularyTracker.html"><i class="fas fa-book"></i>&nbsp;My Vocabulary</a></li>
+            <li><a href="grammarLessons.html"><i class="fas fa-language"></i>&nbsp;Grammar Lessons</a></li>
+            <li><a href="listeningPractice.html"><i class="fas fa-headphones"></i>&nbsp;Listening Practice</a></li>
+            <li><a href="readingPractice.html"><i class="fas fa-file-alt"></i>&nbsp;Reading Practice</a></li>
+            <li><a href="learningMaterials.html"><i class="fas fa-globe"></i>&nbsp;Study Materials</a></li>
+            <li><a href="progress.html"><i class="fas fa-chart-line"></i>&nbsp;My Progress</a></li>
+            <li><a href="quizzes.html"><i class="fas fa-clipboard-check"></i>&nbsp;Quizzes</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <a href="index.html"><img src="images/logo.PNG" width="300px" class="mobile-logo"></a>
+        <div class="top-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <div class="notification-icon">
+                    <h4 style="margin-right: -40px;">Notifications</h4>
+                    <span class="badge">3</span>
+                </div>
+                <div class="profile">
+                    <h4>Profile</h4>
+                    <div class="dropdown">
+                        <a href="profile.html"><i class="fas fa-user"></i> &nbsp;Profile</a>
+                        <a href="settings.html"><i class="fas fa-wrench"></i> &nbsp;Settings</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> &nbsp;Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" id="learning-plan">
+                <a href="learningPlan.html"><img src="images/plan.jpg" alt="Study Plan"></a>
+                <h2>Study Plan</h2>
+                <p>Personalized study schedules tailored to your proficiency and objectives</p>
+            </div>
+            <div class="card" id="vocabulary-tracker">
+                <a href="vocabularyTracker.html"><img src="images/vocabulary.jpg" alt="My Vocabulary"></a>
+                <h2>My Vocabulary</h2>
+                <p>Customize your vocabulary learning effectively</p>
+            </div>
+            <div class="card" id="grammar-lessons">
+                <a href="grammarLessons.html"><img src="images/grammar.jpg" alt="Grammar Lessons"></a>
+                <h2>Grammar Lessons</h2>
+                <p>Organized grammar lessons featuring examples and practice exercises</p>
+            </div>
+            <div class="card" id="listening-practice">
+                <a href="listeningPractice.html"><img src="images/listening.jpg" alt="Listening Practice"></a>
+                <h2>Listening Practice</h2>
+                <p>Audio and video resources for effective listening practice</p>
+            </div>
+            <div class="card" id="reading-practice">
+                <a href="readingPractice.html"><img src="images/reading.jpg" alt="Reading Practice"></a>
+                <h2>Reading Practice</h2>
+                <p>Reading comprehension exercises with texts of different difficulty levels</p>
+            </div>
+            <div class="card" id="cultural-insights">
+                <a href="learningMaterials.html"><img src="images/materials.jpg" alt="materials"></a>
+                <h2>Study Materials</h2>
+                <p>Additional study materials for continued learning</p>
+            </div>
+            <div class="card" id="progress">
+                <a href="progress.html"><img src="images/progress.jpg" alt="Progress"></a>
+                <h2>My Progress</h2>
+                <p>Visual progress about vocabulary, grammar, and other japanese skills</p>
+            </div>
+            <div class="card" id="quizzes">
+                <a href="quizzes.html"><img src="images/quiz.jpg" alt="Quizzes"></a>
+                <h2>Quizzes</h2>
+                <p>Frequent quizzes to evaluate knowledge and prepare for exams</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Japanese Study Platform. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

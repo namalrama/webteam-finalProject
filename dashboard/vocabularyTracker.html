@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Tracker - Japanese Study Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html"><img src="images/logo.PNG" width="220px"></a>
+        <ul>
+            <li><a href="learningPlan.html"><i class="fas fa-calendar-alt"></i>&nbsp;Study Plan</a></li>
+            <li><a href="vocabularyTracker.html"><i class="fas fa-book"></i>&nbsp;My Vocabulary</a></li>
+            <li><a href="grammarLessons.html"><i class="fas fa-language"></i>&nbsp;Grammar Lessons</a></li>
+            <li><a href="listeningPractice.html"><i class="fas fa-headphones"></i>&nbsp;Listening Practice</a></li>
+            <li><a href="readingPractice.html"><i class="fas fa-file-alt"></i>&nbsp;Reading Practice</a></li>
+            <li><a href="learningMaterials.html"><i class="fas fa-globe"></i>&nbsp;Study Materials</a></li>
+            <li><a href="progress.html"><i class="fas fa-chart-line"></i>&nbsp;My Progress</a></li>
+            <li><a href="quizzes.html"><i class="fas fa-clipboard-check"></i>&nbsp;Quizzes</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="top-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <div class="notification-icon">
+                    <h4 style="margin-right: -40px;">Notifications</h4>
+                    <span class="badge">3</span>
+                </div>
+                <div class="profile">
+                    <h4>Profile</h4>
+                    <div class="dropdown">
+                        <a href="#"><i class="fas fa-user"></i> &nbsp;Profile</a>
+                        <a href="#"><i class="fas fa-wrench"></i> &nbsp;Settings</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> &nbsp;Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vocabulary-tracker-page">
+            <div class="tracker-overview">
+                <h1>Vocabulary Tracker</h1>
+                <p>Track your progress and manage your vocabulary list.</p>
+            </div>
+            <div class="tracker-content">
+                <div class="add-word">
+                    <h2>Add New Word</h2>
+                    <form id="add-word-form">
+                        <label for="word">Word:</label>
+                        <input type="text" id="word" name="word" required>
+                        <label for="meaning">Meaning:</label>
+                        <input type="text" id="meaning" name="meaning" required>
+                        <label for="example">Example Sentence:</label>
+                        <textarea id="example" name="example" rows="3" required></textarea>
+                        <button type="submit">Add Word</button>
+                    </form>
+                </div>
+                <div class="vocabulary-list">
+                    <h2>Your Vocabulary List</h2>
+                    <table id="vocabulary-table">
+                        <thead>
+                            <tr>
+                                <th>Word</th>
+                                <th>Meaning</th>
+                                <th>Example Sentence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>こんにちは </td>
+                                <td>Hello </td>
+                                <td>こんにちは、元気ですか？</td>
+                            </tr>
+                            <tr>
+                                <td>ありがとう </td>
+                                <td>Thank you</td>
+                                <td>ありがとう、助かりました</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Japanese Study Platform. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="vocabulary-tracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes - Japanese Study Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html"><img src="images/logo.PNG" width="220px"></a>
+        <ul>
+            <li><a href="learningPlan.html"><i class="fas fa-calendar-alt"></i>&nbsp;Study Plan</a></li>
+            <li><a href="vocabularyTracker.html"><i class="fas fa-book"></i>&nbsp;My Vocabulary</a></li>
+            <li><a href="grammarLessons.html"><i class="fas fa-language"></i>&nbsp;Grammar Lessons</a></li>
+            <li><a href="listeningPractice.html"><i class="fas fa-headphones"></i>&nbsp;Listening Practice</a></li>
+            <li><a href="readingPractice.html"><i class="fas fa-file-alt"></i>&nbsp;Reading Practice</a></li>
+            <li><a href="learningMaterials.html"><i class="fas fa-globe"></i>&nbsp;Study Materials</a></li>
+            <li><a href="progress.html"><i class="fas fa-chart-line"></i>&nbsp;My Progress</a></li>
+            <li><a href="quizzes.html"><i class="fas fa-clipboard-check"></i>&nbsp;Quizzes</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="top-nav">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Quizzes...">
+            </div>
+            <div class="icons">
+                <div class="notification-icon">
+                    <h4 style="margin-right: -40px;">Notifications</h4>
+                    <span class="badge">3</span>
+                </div>
+                <div class="profile">
+                    <h4>Profile</h4>
+                    <div class="dropdown">
+                        <a href="profile.html"><i class="fas fa-user"></i> &nbsp;Profile</a>
+                        <a href="settings.html"><i class="fas fa-wrench"></i> &nbsp;Settings</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> &nbsp;Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quizzes-page">
+            <div class="materials-overview">
+                <h1>Quizzes</h1>
+                <p>Explore our collection of learning materials categorized by JLPT proficiency levels. Select a level to access resources tailored to your current stage of learning.</p>
+            </div>
+            <!-- <div class="level-selection">
+                <h2>Select Proficiency Level</h2>
+                <div class="levels">
+                    <a href="#beginner" class="level-button">Beginner</a>
+                    <a href="#intermediate" class="level-button">Intermediate</a>
+                    <a href="#advanced" class="level-button">Advanced</a>
+                </div>
+            </div> -->
+            <div class="quizzes-list">
+                <div id="beginner" class="quizzes-section">
+                    <h2>Beginner Quizzes</h2>
+                    <ul>
+                        <li><a href="quiz1.html">Quiz 1: Basic Greetings</a></li>
+                        <li><a href="quiz2.html">Quiz 2: Numbers and Dates</a></li>
+                        <li><a href="quiz3.html">Quiz 3: Common Phrases</a></li>
+                    </ul>
+                </div>
+                <div id="intermediate" class="quizzes-section">
+                    <h2>Intermediate Quizzes</h2>
+                    <ul>
+                        <li><a href="quiz4.html">Quiz 4: Daily Activities</a></li>
+                        <li><a href="quiz5.html">Quiz 5: Travel and Directions</a></li>
+                        <li><a href="quiz6.html">Quiz 6: Intermediate Kanji</a></li>
+                    </ul>
+                </div>
+                <div id="advanced" class="quizzes-section">
+                    <h2>Advanced Quizzes</h2>
+                    <ul>
+                        <li><a href="quiz7.html">Quiz 7: Complex Sentences</a></li>
+                        <li><a href="quiz8.html">Quiz 8: Japanese Literature</a></li>
+                        <li><a href="quiz9.html">Quiz 9: Advanced Kanji</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Japanese Study Platform. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
